@@ -14,7 +14,7 @@ class Chess {
 			ended: false, // when the game is ended
 			won: null, // Winning player
 			turn: null, // Player turn
-			timer: 5, // Five minutes Timer
+			timer: 120, // Five minutes Timer
 		};
 
 		this.data = {
@@ -45,8 +45,8 @@ class Chess {
 	async assignPlayers() {
 		// will return a promise
 		return new Promise((resolve) => {
-			const player1 = new Player({ username: "Orlan", id: 1, role: "white" }); // player 1
-			const player2 = new Player({ username: "Magnus", id: 2, role: "black" }); // player 2
+			const player1 = new Player({ username: "Shohan", id: 1, role: "white" }); // player 1
+			const player2 = new Player({ username: "You", id: 2, role: "black" }); // player 2
 
 			this.data.players = [player1, player2]; // assign into the game players
 
